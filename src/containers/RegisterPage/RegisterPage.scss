@@ -1,0 +1,27 @@
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  height: calc(100vh - 42px);
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 32px;
+  }
+
+  &__img {
+    width: 40%;
+    margin-bottom: 32px;
+  }
+  &__input {
+    max-width: 400px;
+    width: 320px;
+  }
+  &__btn {
+    width: 100%;
+  }
+}

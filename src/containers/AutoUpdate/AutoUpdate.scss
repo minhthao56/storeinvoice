@@ -1,0 +1,13 @@
+.auto-update {
+  text-align: center;
+  max-width: 350px;
+  width: 100%;
+  p {
+    margin-bottom: 24px;
+  }
+  &__actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

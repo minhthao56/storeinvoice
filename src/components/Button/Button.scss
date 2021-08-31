@@ -1,0 +1,31 @@
+@import "../../assets/scss/variables";
+
+.btn {
+  background-color: $primary-color;
+  border: solid 1px $primary-color;
+  border-radius: 4px;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &--red {
+    background-color: $red-color;
+    border: solid 1px $red-color;
+  }
+  &--big {
+    width: 120px;
+    height: 42px;
+  }
+  &--white {
+    background-color: white;
+    border: solid 1px gray;
+    color: gray;
+  }
+  &--xbig {
+    height: 48px;
+    width: 164px;
+  }
+}

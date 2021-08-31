@@ -1,0 +1,21 @@
+@import "../../../../assets/scss/mixins";
+
+.company-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  justify-content: center;
+  width: 100%;
+  max-width: 210px;
+  cursor: pointer;
+  border: solid 2px transparent;
+
+  p {
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  &--selected {
+    border: solid 2px grey;
+  }
+}

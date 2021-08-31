@@ -1,0 +1,37 @@
+@import "../../assets/scss/mixins";
+
+.choose-type {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 52px);
+  overflow: auto;
+  justify-content: center;
+  padding: 52px;
+  h3 {
+    text-align: center;
+    margin-bottom: 42px;
+  }
+  &__container {
+    max-width: 480px;
+    flex: 1;
+    margin-right: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 42px;
+  }
+  &__img {
+    width: 35%;
+    margin-left: 52px;
+    @include max-respond-to(md) {
+      display: none;
+    }
+  }
+  &__input {
+    width: 320px;
+  }
+  &__btn {
+    width: 68%;
+  }
+}

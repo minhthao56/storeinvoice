@@ -1,0 +1,84 @@
+@import "../../assets/scss/variables";
+
+.title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  span {
+    font-weight: 600;
+  }
+
+  &__go-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    width: 52px;
+    cursor: pointer;
+  }
+  &__avatar {
+    display: flex;
+    align-items: center;
+    border-left: 3px solid $primary-color;
+    padding-left: 8px;
+    margin-left: 16px;
+    cursor: pointer;
+    position: relative;
+    span {
+      margin-right: 8px;
+    }
+  }
+  &__menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 26px;
+    text-align: start;
+    background-color: white;
+    border-radius: 6px;
+    width: 120px;
+    box-shadow: $box-shadow;
+    z-index: 1000;
+    div {
+      padding: 12px;
+      transition: all 0.4s;
+
+      &:hover {
+        transition: all 0.4s;
+        background-color: rgba(128, 128, 128, 0.2);
+      }
+    }
+  }
+
+  &__action {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 4px;
+    left: 4px;
+  }
+  &__close {
+    background-color: $red-color;
+    height: 42px;
+    width: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &--nomal {
+      background-color: $body-color;
+    }
+  }
+  &__title {
+    -webkit-app-region: drag;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

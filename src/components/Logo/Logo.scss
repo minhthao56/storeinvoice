@@ -1,0 +1,14 @@
+@import "../../assets/scss/variables.scss";
+
+.logo {
+  background-color: $primary-color;
+  color: white;
+  width: 67px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 4px;
+}

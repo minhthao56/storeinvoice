@@ -1,0 +1,3 @@
+interface ILogo {
+  marginRight?: number;
+}

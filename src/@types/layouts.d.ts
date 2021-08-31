@@ -1,0 +1,3 @@
+interface ILayout {
+  title?: string;
+}

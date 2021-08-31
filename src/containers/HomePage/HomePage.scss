@@ -1,0 +1,15 @@
+.home-page {
+  padding: 42px;
+  height: calc(100vh - 52px);
+  overflow: auto;
+
+  &__from {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1300px;
+  }
+  &__inputs {
+    width: 100%;
+  }
+}

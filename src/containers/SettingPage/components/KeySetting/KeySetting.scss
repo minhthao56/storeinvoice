@@ -1,0 +1,13 @@
+.key-setting {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 320px;
+  justify-content: space-between;
+  border-bottom: solid 1px #dcdcdc;
+  margin-bottom: 28px;
+  &__text {
+    margin-bottom: 3px;
+    margin-left: 3px;
+  }
+}

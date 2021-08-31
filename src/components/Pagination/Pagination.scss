@@ -1,0 +1,22 @@
+@import "../../assets/scss/variables";
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  &__btn {
+    border: solid 1px rgba(128, 128, 128, 0.493);
+    border-radius: 4px;
+    height: 28px;
+    width: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+    cursor: pointer;
+    &--blue {
+      background-color: $primary-color;
+      border-color: $primary-color;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,3 @@
+interface IInvoicePreview {
+  link?: string;
+}

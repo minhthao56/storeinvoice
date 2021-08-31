@@ -1,0 +1,17 @@
+.modal-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 32px;
+  min-width: 400px;
+  &__input {
+    max-width: 400px;
+  }
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}

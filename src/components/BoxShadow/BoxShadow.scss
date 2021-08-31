@@ -1,0 +1,8 @@
+@import "../../assets/scss/variables";
+
+.box-shadow {
+  background: #ffffff;
+  box-shadow: $box-shadow;
+  border-radius: 8px;
+  padding: 20px;
+}

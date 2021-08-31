@@ -1,0 +1,3 @@
+interface ITitleBar {
+  title?: string;
+}

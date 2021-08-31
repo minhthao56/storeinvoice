@@ -1,0 +1,32 @@
+.modal {
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1000;
+  &--open {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1000;
+  }
+  &__container {
+    transition: all 0.4s;
+    transform: scale(0);
+    &--open {
+      transition: all 0.4s;
+
+      transform: scale(1);
+    }
+    &::-webkit-scrollbar {
+      width: 0px;
+      height: 0px;
+    }
+  }
+}

@@ -1,0 +1,116 @@
+@import "./assets/scss/variables";
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url(./assets/fonts/Roboto-Italic.ttf);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url(./assets/fonts/Roboto-Thin.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url(./assets/fonts/Roboto-ThinItalic.ttf);
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url(./assets/fonts/Roboto-LightItalic.ttf);
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url(./assets/fonts/Roboto-Light.ttf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url(./assets/fonts/Roboto-Medium.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url(./assets/fonts/Roboto-MediumItalic.ttf);
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url(./assets/fonts/Roboto-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url(./assets/fonts/Roboto-BoldItalic.ttf);
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url(./assets/fonts/Roboto-BlackItalic.ttf);
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url(./assets/fonts/Roboto-Black.ttf);
+  font-weight: 900;
+}
+
+body {
+  background-color: $body-color;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 16px;
+  color: #343434;
+}
+
+*,
+html {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: $body-color;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 128, 128, 0.514);
+    border-radius: 100px;
+  }
+}
+
+ol,
+ul {
+  list-style: none;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+}

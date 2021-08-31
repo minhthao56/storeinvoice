@@ -1,0 +1,8 @@
+@import "../../assets/scss/variables.scss";
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: solid 1px $primary-color;
+}

@@ -1,0 +1,3 @@
+interface ISvg {
+  fill?: string;
+}
