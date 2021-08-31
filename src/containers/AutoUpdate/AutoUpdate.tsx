@@ -4,7 +4,7 @@ import "./AutoUpdate.scss";
 
 export const AutoUpdate = () => {
   return (
-    <Modal isOpen>
+    <Modal>
       <BoxShadow className="auto-update">
         <p>Bạn có bản cập nhập phần mềm mới. Bạn có muốn cập nhật không?</p>
         <div className="auto-update__actions">
