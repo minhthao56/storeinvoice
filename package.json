@@ -71,9 +71,19 @@
   "build": {
     "productName": "Store Invoice",
     "appId": "com.app.StoreInvoice",
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "minhthao",
+        "repo": "storeinvoice"
+      }
+    ],
     "win": {
       "target": [
         "nsis"
+      ],
+      "publish": [
+        "github"
       ]
     },
     "nsis": {

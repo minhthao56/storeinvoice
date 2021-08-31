@@ -9,7 +9,7 @@ const { BrowserWindow, app, ipcMain } = require("electron");
 const { autoUpdater } = require("electron-updater");
 const path = require("path");
 const isDev = require("electron-is-dev");
-const { WinEvent } = require("../constants/event");
+const { WinEvent, AutoUpdateEvent } = require("../constants/event");
 
 let mainWindow;
 
@@ -68,3 +68,11 @@ app
   .then(() => {
     autoUpdater.checkForUpdatesAndNotify();
   });
+
+autoUpdater.on("update-available", () => {
+  mainWindow.webContents.send(AutoUpdateEvent.UPDATE_AVAILABLE);
+});
+
+autoUpdater.on("update-downloaded", () => {
+  mainWindow.webContents.send(AutoUpdateEvent.UPDATE_DOWNLOADED);
+});
