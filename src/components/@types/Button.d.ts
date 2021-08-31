@@ -5,4 +5,5 @@ interface IButton extends IStyles {
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
   type?: "button" | "submit" | "reset";
   isExtraBig?: boolean;
+  disabled?: boolean;
 }

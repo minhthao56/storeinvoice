@@ -10,6 +10,7 @@ export const Button: React.FC<IButton> = ({
   className,
   type,
   isExtraBig,
+  disabled,
 }) => {
   const checkClassName = () => {
     let name = "btn";
@@ -35,6 +36,7 @@ export const Button: React.FC<IButton> = ({
       className={`${checkClassName()} ${className}`}
       onClick={onClick}
       type={type}
+      disabled={disabled}
     >
       {children}
     </button>
