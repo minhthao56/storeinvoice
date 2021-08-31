@@ -35,7 +35,6 @@ const createWindow = () => {
   if (isDev) {
     mainWindow.webContents.openDevTools();
   }
-  mainWindow.webContents.openDevTools();
 
   // linster close windows
   ipcMain.on(WinEvent.WIN_CLOSE, () => {
@@ -104,5 +103,5 @@ ipcMain.on(AutoUpdateEvent.REQUIRE_UPDATE, () => {
 
 //REQUIRE_UPDATE
 ipcMain.on(AutoUpdateEvent.REQUIRE_CHECK_UPDATE, () => {
-  autoUpdater.checkForUpdates();
+  autoUpdater.checkForUpdatesAndNotify();
 });
