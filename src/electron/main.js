@@ -32,9 +32,10 @@ const createWindow = () => {
   mainWindow.setBackgroundColor("#fbfbfb");
 
   mainWindow.loadFile(path.join(__dirname, "../../public/index.html"));
-  if (isDev) {
-    mainWindow.webContents.openDevTools();
-  }
+  // if (isDev) {
+  //   mainWindow.webContents.openDevTools();
+  // }
+  mainWindow.webContents.openDevTools();
 
   // linster close windows
   ipcMain.on(WinEvent.WIN_CLOSE, () => {
