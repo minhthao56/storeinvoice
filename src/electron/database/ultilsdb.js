@@ -4,7 +4,9 @@ const isDev = require("electron-is-dev");
 class UtilsDB {
   constructor() {
     this.db = new sqlite3.Database(
-      isDev ? __dirname + "/app.db" : process.resourcesPath + "/app.db",
+      isDev
+        ? __dirname + "/app.db"
+        : process.env.LOCALAPPDATA + "/production.db",
       (err) => {
         if (err) {
           console.log("Could not connect to database:", err);

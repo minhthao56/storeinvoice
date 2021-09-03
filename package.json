@@ -1,6 +1,6 @@
 {
   "name": "app-pdf-ts",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "./src/electron/main.js",
   "repository": {
@@ -78,6 +78,12 @@
         "repo": "storeinvoice"
       }
     ],
+    "extraFiles": [
+      {
+       "from": "./src/electron/database/production.db",
+       "to": "."
+      }
+    ],
     "win": {
       "target": [
         "nsis"
@@ -87,7 +93,8 @@
       ]
     },
     "nsis": {
-      "oneClick": false
+      "oneClick": false,
+      "include": "build/installer.nsh"
     },
     "directories": {
       "output": "release"
