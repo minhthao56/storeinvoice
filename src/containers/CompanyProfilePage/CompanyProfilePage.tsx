@@ -230,20 +230,19 @@ export const CompanyProfilePage = () => {
             </div>
             <span>{`Tốc độ: ${progressInfo.bytesPerSecond} kb/s`}</span>
           </Fragment>
-        ) : (
-          <Button
-            isExtraBig
-            disabled={loadingCheck}
-            onClick={() => {
-              apiElectron.sendMessages(AutoUpdateEvent.REQUIRE_CHECK_UPDATE);
-              setLoadingCheck(true);
-            }}
-          >
-            Kiểm tra cập nhật
-          </Button>
-        )}
+        ) : // <Button
+        //   isExtraBig
+        //   disabled={loadingCheck}
+        //   onClick={() => {
+        //     apiElectron.sendMessages(AutoUpdateEvent.REQUIRE_CHECK_UPDATE);
+        //     setLoadingCheck(true);
+        //   }}
+        // >
+        //   Kiểm tra cập nhật
+        // </Button>
+        null}
         <h4>{`Bản phần mềm hiện tại: ${version}`}</h4>
-        {loadingCheck && <Loader />}
+        {/* {loadingCheck && <Loader />} */}
       </BoxShadow>
       <Alert isOpen={message} messages={message} setOpen={setMessage} />
     </div>
